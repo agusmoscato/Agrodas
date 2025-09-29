@@ -1,3 +1,5 @@
+'use client'
+
 import { Phone, Mail, MapPin, MessageCircle, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
 
 export default function Footer() {
@@ -21,53 +23,6 @@ export default function Footer() {
             <p className="text-gray-300 text-sm">
               Comercializamos todos los productos que un productor agropecuario pueda necesitar.
             </p>
-          </div>
-
-          {/* Enlaces rápidos */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
-            <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => scrollToSection('quienes-somos')}
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-300"
-                >
-                  Quiénes Somos
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('nuestro-equipo')}
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-300"
-                >
-                  Nuestro Equipo
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('catalogo')}
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-300"
-                >
-                  Catálogo
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('servicios')}
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-300"
-                >
-                  Servicios
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('contacto')}
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-300"
-                >
-                  Contacto
-                </button>
-              </li>
-            </ul>
           </div>
 
           {/* Información de contacto */}

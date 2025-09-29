@@ -1,9 +1,9 @@
-import { Seedling, Droplets, Shield, Zap, Wheat, Carrot } from 'lucide-react'
+import { Crop, Droplets, Shield, Zap, Wheat, Carrot } from 'lucide-react'
 
 export default function Catalog() {
   const categories = [
     {
-      icon: Seedling,
+      icon: Crop,
       title: "Semillas",
       description: "Variedades de alta calidad para todos los cultivos",
       products: ["Soja", "Maíz", "Trigo", "Girasol", "Sorgo"],

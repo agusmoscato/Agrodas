@@ -1,3 +1,5 @@
+'use client'
+
 import { FileText, Download, Calendar, TrendingUp, BarChart3, Globe } from 'lucide-react'
 
 export default function Reports() {
@@ -128,16 +130,16 @@ export default function Reports() {
           </div>
 
           <div className="max-w-2xl mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
+            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
                 placeholder="Tu correo electrónico"
                 className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               />
-              <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
+              <button type="submit" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
                 Suscribirse
               </button>
-            </div>
+            </form>
             <p className="text-sm text-gray-500 mt-4 text-center">
               No compartimos tu información. Puedes cancelar la suscripción en cualquier momento.
             </p>
